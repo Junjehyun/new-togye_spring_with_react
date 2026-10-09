@@ -77,6 +77,10 @@ public class BetController {
      * 매칭되므로, 코드 순서와 무관하게 항상 올바르게 동작한다. 다만 사람이 읽을 때
      * 헷갈리지 않게 구체적인 경로를 위쪽에 적어두는 습관을 들이면 좋다.)
      */
+    public String getMethodName(@RequestParam String param) {
+        return new String();
+    }
+    @GetMapping("/stats")
     public BetStatsResponse stats() {
         return betCalculationService.stats();
     }
